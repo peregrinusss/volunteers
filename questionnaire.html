@@ -15,33 +15,40 @@
   <body class="page__body">
     <div class="site-container">
       <main class="main">
-        <section>
-          <div class="container">
-            <div
-              class="section__inner general-section general-section_showcase general-section_showcase-sh"
-            >
-              <div class="grid__content">
-                <div
-                  class="general-section__item general-section__item_color-dark"
-                >
-                  <div class="general-section__item_title">
-                    <h1>Анкета Волонтёра</h1>
-                  </div>
-                  <div class="general-section__item_text">
-                    <p class="large">
-                      Чтобы отправить заявку на участие в программе <span>«Волонтёры
-                        800»</span>, заполните все поля анкеты.<br /><br />
-                      Становиться кандидатами в Волонтёры 800 могут граждане в
-                      возрасте от 16 лет.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+        <section class="page-header">
+  <div class="container">
+    <div
+      class="section__inner general-section general-section_showcase general-section_showcase-sh"
+    >
+      <div class="grid__content">
+        <div
+          class="general-section__item general-section__item_color-dark"
+        >
+          <div class="general-section__item_title">
+            <h1>Анкета Волонтёра</h1>
           </div>
-        </section>
+          <div class="general-section__item_text">
+            <p class="large">
+              Чтобы отправить заявку на участие в программе <span>«Волонтёры
+                800»</span>, заполните все поля анкеты.<br /><br />
+              Становиться кандидатами в Волонтёры 800 могут граждане в
+              возрасте от 16 лет.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="container step__container">
+          <div class="step">
+            Шаг 2 / <span>2</span>
+          </div>
+        </div>
         <section>
-          <div class="container container_whiteback">
+          <div class="container container_whiteback enter__container">
             <div class="grid__content">
               <div class="ticket-box__date"></div>
 
@@ -58,7 +65,7 @@
                       novalidate="novalidate"
                     >
                       <div class="new__project-step active">
-                        <div class="info__item">
+                        <!-- <div class="info__item">
                           <div class="info__subtitle">
                             <span class="field-req">Фамилия</span>
                           </div>
@@ -98,7 +105,7 @@
                               value=""
                             />
                           </div>
-                        </div>
+                        </div> -->
 
                         <div class="profile-form__row-cont">
                           <div
@@ -320,7 +327,7 @@
                             class="profile-form__row profile-form__row_half-s"
                           >
                             <div class="profile-form-item">
-                              <div class="profile-form-item__title">
+                              <div class="profile-form-item__title info__subtitle">
                                 <span class="field-req">Номер телефона</span>
                               </div>
                               <div class="profile-form-item__field">
@@ -333,6 +340,7 @@
                                 ><input
                                   type="text"
                                   name="phone"
+                                  id="aero_phone"
                                   value=""
                                   im-insert="true"
                                   class="valid"
@@ -341,7 +349,7 @@
                               </div>
                             </div>
                           </div>
-                          <div
+                          <!-- <div
                             class="profile-form__row profile-form__row_half-l"
                           >
                             <div class="profile-form-item">
@@ -356,10 +364,10 @@
                                 />
                               </div>
                             </div>
-                          </div>
+                          </div> -->
                         </div>
 
-                        <div class="info__item">
+                        <div class="info__item border-bottom">
                           <div class="info__subtitle">
                             <span class="field-req">Ссылка на страницу в социальной сети
                               «ВКонтакте»</span>
@@ -1044,7 +1052,7 @@
                             <div class="pp-check__text">
                               <span>
                                 <label for="agree1">
-                                  Даю согласие АНО «Центр 800» на обработку сообщенных мной в настоящей анкете моих персональных данных в соответствии с политикой обработки персональных данных.</label
+                                  Даю согласие АНО «Центр 800» на обработку сообщенных мной в настоящей анкете моих персональных данных в соответствии с <a href="#">политикой обработки персональных данных</a>.</label
                                 >
                               </span>
                             </div>
@@ -1056,17 +1064,17 @@
                             <span>Отправить анкету</span>
                           </button>
                         </div>
-                        <div class="pre_button_warn">
-                          Нажимая кнопку «Отправить», я подтверждаю, что
+                        <!-- <div class="pre_button_warn">
+                          Нажимая кнопку «Отправить», я подтверждаю, что
                           ознакомился с
                           <a href="/static/files/policy.pdf" target="_blank"
                             >Политикой обработки персональных данных АНО «Центр
                             800»</a
                           >
-                          и даю согласие на обработку моих персональных данных,
-                          указанных в форме анкеты кандидата в волонтёры, а
+                          и даю согласие на обработку моих персональных данных,
+                          указанных в форме анкеты кандидата в волонтёры, а
                           также получение обратной информации
-                        </div>
+                        </div> -->
                       </div>
                     </form>
                   </div>

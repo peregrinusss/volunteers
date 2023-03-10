@@ -15,16 +15,50 @@
   <body class="page__body">
     <div class="site-container">
       <main class="main">
+
+        <section class="page-header">
+  <div class="container">
+    <div
+      class="section__inner general-section general-section_showcase general-section_showcase-sh"
+    >
+      <div class="grid__content">
+        <div
+          class="general-section__item general-section__item_color-dark"
+        >
+          <div class="general-section__item_title">
+            <h1>Анкета Волонтёра</h1>
+          </div>
+          <div class="general-section__item_text">
+            <p class="large">
+              Чтобы отправить заявку на участие в программе <span>«Волонтёры
+                800»</span>, заполните все поля анкеты.<br /><br />
+              Становиться кандидатами в Волонтёры 800 могут граждане в
+              возрасте от 16 лет.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="container step__container">
+          <div class="step">
+            Шаг 1 / <span>2</span>
+          </div>
+        </div>
         <section>
-          <div class="container container_whiteback">
+          <div class="container container_whiteback enter__container">
             <div class="enter">
-              <h1 class="enter__title">Создание аккаунта <span>волонтёра</span></h1>
-              <form action="">
+              <!-- <h1 class="enter__title">
+                Создание аккаунта <span>волонтёра</span>
+              </h1> -->
+              <form action="" id="enter-form">
                 <div class="info__item">
                   <div class="info__item__input input_box">
                     <input
-                      type="text"
-                      name="fullname_o"
+                      type="email"
+                      name="enter_email"
                       placeholder="Введите ваш email"
                       value=""
                     />
@@ -34,7 +68,7 @@
                   <div class="info__item__input input_box">
                     <input
                       type="text"
-                      name="fullname_o"
+                      name="enter_fullname"
                       placeholder="ФИО"
                       value=""
                     />
@@ -44,14 +78,25 @@
                   <div class="pp-check pp-check_c">
                     <div class="pp-check__checkbox">
                       <div class="check">
-                        <input class="styled-checkbox" id="agree1" value="" name="terms_ok2" type="checkbox">
+                        <input
+                          class="styled-checkbox"
+                          id="agree1"
+                          value=""
+                          name="enter_checkbox"
+                          type="checkbox"
+                        />
                         <label for="agree1"></label>
                       </div>
                     </div>
                     <div class="pp-check__text">
                       <span>
                         <label for="agree1">
-                          Нажимая кнопку зарегистрироваться, я подтверждаю, что ознакомился и принимаю <a href="#">политику обработки персональных данных</a></label>
+                          Нажимая кнопку далее, я подтверждаю, что ознакомился и
+                          принимаю
+                          <a href="#"
+                            >политику обработки персональных данных</a
+                          ></label
+                        >
                       </span>
                     </div>
                   </div>
