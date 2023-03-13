@@ -1,4 +1,71 @@
-<!DOCTYPE html><html lang="ru" class="page"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>Volunteer</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"><script defer="defer" src="js/main.js"></script></head><body class="page__body"><div class="site-container"><main class="main"><section class="page-header"><div class="container"><div class="section__inner general-section general-section_showcase general-section_showcase-sh"><div class="grid__content"><div class="general-section__item general-section__item_color-dark"><div class="general-section__item_title"><h1>Анкета Волонтёра</h1></div><div class="general-section__item_text"><p class="large">Чтобы отправить заявку на участие в программе <span>«Волонтёры 800»</span>, заполните все поля анкеты.<br><br>Становиться кандидатами в Волонтёры 800 могут граждане в возрасте от 16 лет.</p></div></div></div></div></div></section><div class="container step__container"><div class="step">Шаг 2 / <span>2</span></div></div><section><div class="container container_whiteback enter__container"><div class="grid__content"><div class="ticket-box__date"></div><div class=""><div class="req"><span>*</span> — обязательное поле</div><div class="content-block__cont new__project_cont"><div class="new__project-steps"><form action="" method="" id="become_vol" novalidate="novalidate"><div class="new__project-step active"><!-- <div class="info__item">
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Volunteer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <div class="site-container">
+      <main class="main">
+
+        <section class="page-header">
+  <div class="container">
+    <div
+      class="section__inner general-section general-section_showcase general-section_showcase-sh"
+    >
+      <div class="grid__content">
+        <div
+          class="general-section__item general-section__item_color-dark"
+        >
+          <div class="general-section__item_title">
+            <h1>Анкета Волонтёра</h1>
+          </div>
+          <div class="general-section__item_text">
+            <p class="large">
+              Чтобы отправить заявку на участие в программе <span>«Волонтёры
+                800»</span>, заполните все поля анкеты.<br /><br />
+              Становиться кандидатами в Волонтёры 800 могут граждане в
+              возрасте от 16 лет.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="container step__container">
+          <div class="step">
+            Шаг 2 / <span>2</span>
+          </div>
+        </div>
+        <section>
+          <div class="container container_whiteback enter__container">
+            <div class="grid__content">
+              <div class="ticket-box__date"></div>
+
+              <div class="">
+                <div class="req">
+                  <span>*</span> — обязательное поле
+                </div>
+                <div class="content-block__cont new__project_cont">
+                  <div class="new__project-steps">
+                    <form
+                      action=""
+                      method=""
+                      id="become_vol"
+                      novalidate="novalidate"
+                    >
+                      <div class="new__project-step active">
+                        <!-- <div class="info__item">
                           <div class="info__subtitle">
                             <span class="field-req">Фамилия</span>
                           </div>
@@ -38,9 +105,113 @@
                               value=""
                             />
                           </div>
-                        </div> --><div class="profile-form__row-cont"><div class="profile-form__row profile-form__row_half-s"><div class="profile-form-item"><div class="profile-form-item__title"><span class="field-req">Дата рождения</span></div><div class="profile-form-item__field"><input class="js-dob-calendar" type="" placeholder="" name="dob" readonly="" autocomplete="false" value=""></div></div></div><div class="profile-form__row profile-form__row_half-l"><div class="profile-form-item"><div class="gender"><div class="gender__title"><span class="field-req">Пол</span></div><div class="gender__items"><div class="check"><input class="styled-checkbox" type="radio" id="Male" value="Мужской" name="gender" data-id="Male"> <label for="Male">Мужской</label></div><div class="check"><input class="styled-checkbox" type="radio" value="Женский" id="Female" name="gender" data-id="Female"> <label for="Female">Женский</label></div></div></div></div></div><div class="clear"></div><div class="vol_age_warn"><b>Обратите внимание!</b><br>Становиться кандидатами в «Волонтёры 800» могут граждане в возрасте от 16 лет.</div></div><div class="info__item js-dob-spoiler" style="display: none;"><div class="info__subtitle"><span class="field-req">Согласие</span></div><div class="info__item__gallery" name="presentation"><div class="gallery__item"><div class="info__cover_upload gallery__upload"><div class="upload__area upload__area-small js-upload-widget" data-extensions='["pdf","jpg","jpeg"]' data-size="25"><input type="text" name="user_dob_agreement" value="" class="hidden_txt"> <img class="upload__area_img" src="img/icons/upload.svg" alt="upload_prezentation"> <span class="upload__area_text"><div class="user-file">Загрузить файл</div></span><div class="inner-div js-upload-widget-button" style="position: relative;
+                        </div> -->
+
+                        <div class="profile-form__row-cont">
+                          <div
+                            class="profile-form__row profile-form__row_half-s"
+                          >
+                            <div class="profile-form-item">
+                              <div class="profile-form-item__title">
+                                <span class="field-req">Дата рождения</span>
+                              </div>
+                              <div class="profile-form-item__field">
+                                <input
+                                  class="js-dob-calendar"
+                                  type=""
+                                  placeholder=""
+                                  name="dob"
+                                  readonly=""
+                                  autocomplete="false"
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="profile-form__row profile-form__row_half-l"
+                          >
+                            <div class="profile-form-item">
+                              <div class="gender">
+                                <div class="gender__title">
+                                  <span class="field-req">Пол</span>
+                                </div>
+                                <div class="gender__items">
+                                  <div class="check">
+                                    <input
+                                      class="styled-checkbox"
+                                      type="radio"
+                                      id="Male"
+                                      value="Мужской"
+                                      name="gender"
+                                      data-id="Male"
+                                    />
+                                    <label for="Male">Мужской</label>
+                                  </div>
+                                  <div class="check">
+                                    <input
+                                      class="styled-checkbox"
+                                      type="radio"
+                                      value="Женский"
+                                      id="Female"
+                                      name="gender"
+                                      data-id="Female"
+                                    />
+                                    <label for="Female">Женский</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clear"></div>
+                          <div class="vol_age_warn">
+                            <b>Обратите внимание!</b><br />
+                            Становиться кандидатами в «Волонтёры 800» могут
+                            граждане в возрасте от 16 лет.
+                          </div>
+                        </div>
+
+                        <div class="info__item js-dob-spoiler" style="display: none;">
+                          <div class="info__subtitle">
+                            <span class="field-req">Согласие</span>
+                          </div>
+                          <div class="info__item__gallery" name="presentation">
+                            <div class="gallery__item">
+                              <div class="info__cover_upload gallery__upload">
+                                <div
+                                  class="upload__area upload__area-small js-upload-widget"
+                                  data-extensions='["pdf","jpg","jpeg"]'
+                                  data-size="25"
+                                >
+                                  <input
+                                    type="text"
+                                    name="user_dob_agreement"
+                                    value=""
+                                    class="hidden_txt"
+                                  />
+                                  <img
+                                    class="upload__area_img"
+                                    src="img/icons/upload.svg"
+                                    alt="upload_prezentation"
+                                  />
+                                  <span class="upload__area_text">
+                                    <div class="user-file">Загрузить файл</div>
+                                  </span>
+                                  <div
+                                    class="inner-div js-upload-widget-button"
+                                    style="
+                                      position: relative;
                                       overflow: hidden;
-                                      direction: ltr;"><input qq-button-id="69ff2e07-46f1-4465-a5cf-1baddc2a33dc" title="Выберите файл" type="file" name="file" style="position: absolute;
+                                      direction: ltr;
+                                    "
+                                  >
+                                    <input
+                                      qq-button-id="69ff2e07-46f1-4465-a5cf-1baddc2a33dc"
+                                      title="Выберите файл"
+                                      type="file"
+                                      name="file"
+                                      style="
+                                        position: absolute;
                                         right: 0px;
                                         top: 0px;
                                         font-family: Arial;
@@ -49,7 +220,136 @@
                                         padding: 0px;
                                         cursor: pointer;
                                         opacity: 0;
-                                        height: 100%;"></div><div class="file_upload_title" style="display: none">Загружено <span class="file_upload_title_i"></span></div></div><div class="upload__require-box upload__require-box-small upload__require-box-small_i"><div class="require-box__item"><p class="small_bold"><span class="fw-normal">По законодательству РФ на обработку персональных данных несовершеннолетнего нам необходимо согласие законного представителя несовершеннолетнего. Скачайте и распечатайте шаблон согласия, заполните и подпишите согласие у своего законного представителя (например, родителя), после чего загрузите в анкету фото или полноцветный скан согласия.</span></p><p class="small_bold"><span class="fw-normal">Файл </span>PDF, JPG, JPEG не более 10 Мб</p><div class="showcase_buttons"><div class=""><a href="#" download="" class="button go_down_in_history"><div class="addnew_img green"><img src="img/icons/showcase.svg" alt="showcase_11"></div><p><b>Шаблон согласия</b></p></a></div></div></div></div></div></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">ФИО законного представителя (родителя/опекуна)</span></div><div class="info__item__input input_box"><input type="text" name="user_dob_fio" placeholder=""></div></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Контактный номер законного представителя (родителя/опекуна)</span></div><div class="info__item__input input_box"><input type="text" name="user_dob_phone" im-insert="true"></div></div></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Гражданство</span></div><div class="info__item__input input_box"><input type="text" name="citizenship" placeholder=""></div></div><div class="profile-form__row-cont"><div class="profile-form__row profile-form__row_half-s"><div class="profile-form-item"><div class="profile-form-item__title info__subtitle"><span class="field-req">Номер телефона</span></div><div class="profile-form-item__field"><label id="phone-error" class="error" for="phone" style="display: none"></label><input type="text" name="phone" id="aero_phone" value="" im-insert="true" class="valid" aria-invalid="false"></div></div></div><!-- <div
+                                        height: 100%;
+                                      "
+                                    />
+                                  </div>
+                                  <div
+                                    class="file_upload_title"
+                                    style="display: none"
+                                  >
+                                    Загружено
+                                    <span class="file_upload_title_i"></span>
+                                  </div>
+                                </div>
+
+                                <div
+                                  class="upload__require-box upload__require-box-small upload__require-box-small_i"
+                                >
+                                  <div class="require-box__item">
+                                    <p class="small_bold">
+                                      <span class="fw-normal">
+                                        По законодательству РФ на обработку
+                                        персональных данных несовершеннолетнего
+                                        нам необходимо согласие законного
+                                        представителя несовершеннолетнего.
+                                        Скачайте и распечатайте шаблон согласия,
+                                        заполните и подпишите согласие у своего
+                                        законного представителя (например,
+                                        родителя), после чего загрузите в анкету
+                                        фото или полноцветный скан согласия.
+                                      </span>
+                                    </p>
+                                    <p class="small_bold">
+                                      <span class="fw-normal"> Файл </span>
+                                      PDF, JPG, JPEG не более 10 Мб
+                                    </p>
+
+                                    <div class="showcase_buttons">
+                                      <div class="">
+                                        <a
+                                          href="#"
+                                          download=""
+                                          class="button go_down_in_history"
+                                        >
+                                          <div class="addnew_img green">
+                                            <img
+                                              src="img/icons/showcase.svg"
+                                              alt="showcase_11"
+                                            />
+                                          </div>
+                                          <p>
+                                            <b> Шаблон согласия </b>
+                                          </p>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="info__item">
+                            <div class="info__subtitle">
+                              <span class="field-req">ФИО законного представителя
+                                (родителя/опекуна)</span>
+                            </div>
+                            <div class="info__item__input input_box">
+                              <input
+                                type="text"
+                                name="user_dob_fio"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+
+                          <div class="info__item border-bottom">
+                            <div class="info__subtitle">
+                              <span class="field-req">Контактный номер законного представителя
+                                (родителя/опекуна)</span>
+                            </div>
+                            <div class="info__item__input input_box">
+                              <input
+                                type="text"
+                                name="user_dob_phone"
+                                im-insert="true"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle">
+                            <span class="field-req">Гражданство</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <input
+                              type="text"
+                              name="citizenship"
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="profile-form__row-cont">
+                          <div
+                            class="profile-form__row profile-form__row_half-s"
+                          >
+                            <div class="profile-form-item">
+                              <div class="profile-form-item__title info__subtitle">
+                                <span class="field-req">Номер телефона</span>
+                              </div>
+                              <div class="profile-form-item__field">
+                                <label
+                                  id="phone-error"
+                                  class="error"
+                                  for="phone"
+                                  style="display: none"
+                                ></label
+                                ><input
+                                  type="text"
+                                  name="phone"
+                                  id="aero_phone"
+                                  value=""
+                                  im-insert="true"
+                                  class="valid"
+                                  aria-invalid="false"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <!-- <div
                             class="profile-form__row profile-form__row_half-l"
                           >
                             <div class="profile-form-item">
@@ -64,7 +364,707 @@
                                 />
                               </div>
                             </div>
-                          </div> --></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Ссылка на страницу в социальной сети «ВКонтакте»</span></div><div class="info__item__input input_box sn-input-box sn-input-box_w"><div class="sn-img"><img src="img/icons/vk.png" alt="input-vk"></div><input type="text" placeholder="https://vk.com/yourpage" name="vk_link"></div></div><div class="info__item"><div class="info__subtitle info__subtitle-size"><span class="field-req">Владение английским языком</span></div><div class="info__item__checkbox-box"><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie1" data-id="pie1" value="Не владею"> <label for="pie1" class="checkbox__text"><span>Не владею</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie2" data-id="pie2" value="Начальный (А1)"> <label for="pie2" class="checkbox__text"><span>Начальный (А1)</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie3" data-id="pie3" value="Элементарный (А2)"> <label for="pie3" class="checkbox__text"><span>Элементарный (А2)</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie4" data-id="pie4" value="Средний (В1)"> <label for="pie4" class="checkbox__text"><span>Средний (В1)</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie5" data-id="pie5" value="Средне-продвинутый (B2)"> <label for="pie5" class="checkbox__text"><span>Средне-продвинутый (B2)</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie6" data-id="pie6" value="Продвинутый (С1)"> <label for="pie6" class="checkbox__text"><span>Продвинутый (С1)</span></label></div><div class="checkbox-box__item"><input type="radio" name="proficiency_in_english" id="pie7" data-id="pie7" value="Владение в совершенстве (С2)"> <label for="pie7" class="checkbox__text"><span>Владение в совершенстве (С2)</span></label></div></div></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Владение другими языками</span></div><div class="info__item__input input_box"><input type="text" name="other_languages" placeholder=""></div></div><div class="info__item"><div class="info__subtitle info__subtitle-size"><span class="field-req">Размер одежды (верх)</span></div><div class="info__item__input input_box"><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size3" data-id="size3" value="S"> <label for="size3" class="checkbox__text"><span>S</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size4" data-id="size4" value="M"> <label for="size4" class="checkbox__text"><span>M</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size5" data-id="size5" value="L"> <label for="size5" class="checkbox__text"><span>L</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size6" data-id="size6" value="XL"> <label for="size6" class="checkbox__text"><span>XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size7" data-id="size7" value="2XL"> <label for="size7" class="checkbox__text"><span>2XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size8" data-id="size8" value="3XL"> <label for="size8" class="checkbox__text"><span>3XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size9" data-id="size9" value="4XL"> <label for="size9" class="checkbox__text"><span>4XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes" id="size9" data-id="size9" value="5XL"> <label for="size9" class="checkbox__text"><span>5XL</span></label></div></div></div><div class="info__item border-bottom"><div class="info__subtitle info__subtitle-size"><span class="field-req">Размер одежды (низ)</span></div><div class="info__item__input input_box"><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size3_1" data-id="size3_1" value="S"> <label for="size3_1" class="checkbox__text"><span>S</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size4_1" data-id="size4_1" value="M"> <label for="size4_1" class="checkbox__text"><span>M</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size5_1" data-id="size5_1" value="L"> <label for="size5_1" class="checkbox__text"><span>L</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size6_1" data-id="size6_1" value="XL"> <label for="size6_1" class="checkbox__text"><span>XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size7_1" data-id="size7_1" value="2XL"> <label for="size7_1" class="checkbox__text"><span>2XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size8_1" data-id="size8_1" value="3XL"> <label for="size8_1" class="checkbox__text"><span>3XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size9_1" data-id="size9_1" value="4XL"> <label for="size9_1" class="checkbox__text"><span>4XL</span></label></div><div class="checkbox-box__item"><input type="radio" name="size_clothes_niz" id="size9_1" data-id="size9_1" value="5XL"> <label for="size9_1" class="checkbox__text"><span>5XL</span></label></div></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Название учебного заведения</span></div><div class="info__descript"><span>Если вы не учитесь, ставьте прочерк</span></div><div class="info__item__input input_box"><input type="text" name="study_place" placeholder=""></div></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Место работы</span></div><div class="info__descript"><span>Если вы не работаете, ставьте прочерк</span></div><div class="info__item__input input_box"><input type="text" name="work" placeholder=""></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Почему вы хотите стать Волонтёром 800?</span></div><div class="info__item__input textarea_box"><textarea placeholder="" name="why_volunteer" rows="4"></textarea><div class="textarea_resize"></div><div class="textarea_resize"></div><div class="textarea_resize"></div></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Опишите свой опыт волонтерской деятельности</span></div><div class="info__descript"><span>Перечислить мероприятия, в которых участвовали, указать функцию, которую выполняли.</span></div><div class="info__item__input textarea_box"><textarea placeholder="" name="experience" rows="4"></textarea><div class="textarea_resize"></div><div class="textarea_resize"></div><div class="textarea_resize"></div></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">В какой общественной / волонтерской организации состоите?</span></div><div class="info__item__input textarea_box"><textarea placeholder="" name="state_awards" rows="4"></textarea><div class="textarea_resize"></div><div class="textarea_resize"></div><div class="textarea_resize"></div></div></div><div class="info__item border-bottom"><div class="info__subtitle"><span class="field-req">Есть ли лидерский опыт?</span></div><div class="info__descript"><span>Если да, то перечислите мероприятия, в которых были лидером, укажите функционал, который выполняли/направление деятельности.</span></div><div class="info__item__input textarea_box"><textarea placeholder="" name="experience_leading" rows="4"></textarea><div class="textarea_resize"></div><div class="textarea_resize"></div><div class="textarea_resize"></div></div></div><div class="info__item"><div class="info__subtitle info__subtitle-size"><span class="field-req">Город/населенный пункт проживания</span></div><div class="info__item__input input_box"><div class="checkbox-box__item city-nizhny"><input type="radio" name="city" id="city_nizhny" data-id="city_nizhny" value="Нижний Новгород"> <label for="city_nizhny" class="checkbox__text"><span>Нижний Новгород</span></label></div><div class="checkbox-box__item city-another"><input type="radio" name="city" id="city_other" data-id="city_other" value="Другой населенный пункт"> <label for="city_other" class="checkbox__text"><span>Другой населенный пункт</span></label></div></div></div><div class="info__item js-city_area-spoiler" style="display: none;"><div class="info__item"><div class="info__subtitle"><span class="field-req">Населенный пункт</span></div><div class="info__item__input input_box"><input type="text" name="user_dob_fio" placeholder=""></div></div></div><div class="info__item js-city_nizhny-spoiler" style="display: none;"><div class="info__subtitle info__subtitle-size"><span class="field-req">Район Нижнего Новгорода</span></div><div class="info__item__input input_box city-area"><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_sorm" data-id="city_sorm" value="Сормовский"> <label for="city_sorm" class="checkbox__text"><span>Сормовский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_auto" data-id="city_auto" value="Автозаводский"> <label for="city_auto" class="checkbox__text"><span>Автозаводский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_sov" data-id="city_sov" value="Советский"> <label for="city_sov" class="checkbox__text"><span>Советский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_msk" data-id="city_msk" value="Московский"> <label for="city_msk" class="checkbox__text"><span>Московский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_priok" data-id="city_priok" value="Приокский"> <label for="city_priok" class="checkbox__text"><span>Приокский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_nizh" data-id="city_nizh" value="Нижегородский"> <label for="city_nizh" class="checkbox__text"><span>Нижегородский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_lenin" data-id="city_lenin" value="Ленинский"> <label for="city_lenin" class="checkbox__text"><span>Ленинский</span></label></div><div class="checkbox-box__item"><input type="radio" name="city_area" id="city_kanav" data-id="city_kanav" value="Канавинский"> <label for="city_kanav" class="checkbox__text"><span>Канавинский</span></label></div></div></div><div class="info__item border-top"><div class="info__subtitle"><span class="field-req">Паспортные данные (серия, номер)</span></div><div class="info__item__input short-input sn-input-box input_box"><input type="text" name="passport_ser_num" placeholder="" im-insert="true"></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Дата выдачи паспорта</span></div><div class="info__item__input input_box sn-input-box data-input"><div class="sn-img"><img src="img/icons/calendar.svg" alt=""></div><input required="" name="passport_date" readonly="" id="dt_start" class="datepicker-here" type="text" value="" placeholder=""></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Кем выдан паспорт</span></div><div class="info__item__input textarea_box"><textarea placeholder="" name="passport_who" rows="4"></textarea><div class="textarea_resize"></div><div class="textarea_resize"></div><div class="textarea_resize"></div></div></div><div class="info__item"><div class="info__subtitle"><span class="field-req">Адрес по прописке</span></div><div class="info__item__input input_box"><input type="text" name="passport_address" placeholder=""></div></div><div class="pp__check"><div class="pp-check pp-check_c"><div class="pp-check__checkbox"><div class="check"><input class="styled-checkbox" id="agree1" value="" name="terms_ok2" type="checkbox"> <label for="agree1"></label></div></div><div class="pp-check__text"><span><label for="agree1">Даю согласие АНО «Центр 800» на обработку сообщенных мной в настоящей анкете моих персональных данных в соответствии с <a href="#">политикой обработки персональных данных</a>.</label></span></div></div></div><div class="content-block__more"><button type="submit" class="content-block-more"><span>Отправить анкету</span></button></div><!-- <div class="pre_button_warn">
+                          </div> -->
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle">
+                            <span class="field-req">Ссылка на страницу в социальной сети
+                              «ВКонтакте»</span>
+                          </div>
+                          <div
+                            class="info__item__input input_box sn-input-box sn-input-box_w"
+                          >
+                            <div class="sn-img">
+                              <img
+                                src="img/icons/vk.png"
+                                alt="input-vk"
+                              />
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="https://vk.com/yourpage"
+                              name="vk_link"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle info__subtitle-size">
+                            <span class="field-req">Владение английским языком</span>
+                          </div>
+                          <div class="info__item__checkbox-box">
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie1"
+                                data-id="pie1"
+                                value="Не владею"
+                              />
+                              <label for="pie1" class="checkbox__text"
+                                ><span>Не владею</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie2"
+                                data-id="pie2"
+                                value="Начальный (А1)"
+                              />
+                              <label for="pie2" class="checkbox__text"
+                                ><span>Начальный (А1)</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie3"
+                                data-id="pie3"
+                                value="Элементарный (А2)"
+                              />
+                              <label for="pie3" class="checkbox__text"
+                                ><span>Элементарный (А2)</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie4"
+                                data-id="pie4"
+                                value="Средний (В1)"
+                              />
+                              <label for="pie4" class="checkbox__text"
+                                ><span>Средний (В1)</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie5"
+                                data-id="pie5"
+                                value="Средне-продвинутый (B2)"
+                              />
+                              <label for="pie5" class="checkbox__text"
+                                ><span>Средне-продвинутый (B2)</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie6"
+                                data-id="pie6"
+                                value="Продвинутый (С1)"
+                              />
+                              <label for="pie6" class="checkbox__text"
+                                ><span>Продвинутый (С1)</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="proficiency_in_english"
+                                id="pie7"
+                                data-id="pie7"
+                                value="Владение в совершенстве (С2)"
+                              />
+                              <label for="pie7" class="checkbox__text"
+                                ><span>Владение в совершенстве (С2)</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle">
+                            <span class="field-req">Владение другими языками</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <input
+                              type="text"
+                              name="other_languages"
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle info__subtitle-size">
+                            <span class="field-req">Размер одежды (верх)</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size3"
+                                data-id="size3"
+                                value="S"
+                              />
+                              <label for="size3" class="checkbox__text"
+                                ><span>S</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size4"
+                                data-id="size4"
+                                value="M"
+                              />
+                              <label for="size4" class="checkbox__text"
+                                ><span>M</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size5"
+                                data-id="size5"
+                                value="L"
+                              />
+                              <label for="size5" class="checkbox__text"
+                                ><span>L</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size6"
+                                data-id="size6"
+                                value="XL"
+                              />
+                              <label for="size6" class="checkbox__text"
+                                ><span>XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size7"
+                                data-id="size7"
+                                value="2XL"
+                              />
+                              <label for="size7" class="checkbox__text"
+                                ><span>2XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size8"
+                                data-id="size8"
+                                value="3XL"
+                              />
+                              <label for="size8" class="checkbox__text"
+                                ><span>3XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size9"
+                                data-id="size9"
+                                value="4XL"
+                              />
+                              <label for="size9" class="checkbox__text"
+                                ><span>4XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes"
+                                id="size9"
+                                data-id="size9"
+                                value="5XL"
+                              />
+                              <label for="size9" class="checkbox__text"
+                                ><span>5XL</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle info__subtitle-size">
+                            <span class="field-req">Размер одежды (низ)</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size3_1"
+                                data-id="size3_1"
+                                value="S"
+                              />
+                              <label for="size3_1" class="checkbox__text"
+                                ><span>S</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size4_1"
+                                data-id="size4_1"
+                                value="M"
+                              />
+                              <label for="size4_1" class="checkbox__text"
+                                ><span>M</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size5_1"
+                                data-id="size5_1"
+                                value="L"
+                              />
+                              <label for="size5_1" class="checkbox__text"
+                                ><span>L</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size6_1"
+                                data-id="size6_1"
+                                value="XL"
+                              />
+                              <label for="size6_1" class="checkbox__text"
+                                ><span>XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size7_1"
+                                data-id="size7_1"
+                                value="2XL"
+                              />
+                              <label for="size7_1" class="checkbox__text"
+                                ><span>2XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size8_1"
+                                data-id="size8_1"
+                                value="3XL"
+                              />
+                              <label for="size8_1" class="checkbox__text"
+                                ><span>3XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size9_1"
+                                data-id="size9_1"
+                                value="4XL"
+                              />
+                              <label for="size9_1" class="checkbox__text"
+                                ><span>4XL</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="size_clothes_niz"
+                                id="size9_1"
+                                data-id="size9_1"
+                                value="5XL"
+                              />
+                              <label for="size9_1" class="checkbox__text"
+                                ><span>5XL</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Название учебного заведения</span>
+                          </div>
+                          <div class="info__descript">
+                            <span>Если вы не учитесь, ставьте прочерк</span>
+                          </div>
+
+                          <div class="info__item__input input_box">
+                            <input
+                              type="text"
+                              name="study_place"
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle">
+                            <span class="field-req">Место работы</span>
+                          </div>
+                          <div class="info__descript">
+                            <span>Если вы не работаете, ставьте прочерк</span>
+                          </div>
+
+                          <div class="info__item__input input_box">
+                            <input
+                              type="text"
+                              name="work"
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Почему вы хотите стать Волонтёром 800?</span>
+                          </div>
+                          <div class="info__item__input textarea_box">
+                            <textarea
+                              placeholder=""
+                              name="why_volunteer"
+                              rows="4"
+                            ></textarea>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Опишите свой опыт волонтерской деятельности</span>
+                          </div>
+                          <div class="info__descript">
+                            <span
+                              >Перечислить мероприятия, в которых участвовали,
+                              указать функцию, которую выполняли.</span
+                            >
+                          </div>
+                          <div class="info__item__input textarea_box">
+                            <textarea
+                              placeholder=""
+                              name="experience"
+                              rows="4"
+                            ></textarea>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">В какой общественной / волонтерской организации
+                              состоите?</span>
+                          </div>
+
+                          <div class="info__item__input textarea_box">
+                            <textarea
+                              placeholder=""
+                              name="state_awards"
+                              rows="4"
+                            ></textarea>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                          </div>
+                        </div>
+
+                        <div class="info__item border-bottom">
+                          <div class="info__subtitle">
+                            <span class="field-req">Есть ли лидерский опыт?</span>
+                          </div>
+                          <div class="info__descript">
+                            <span
+                              >Если да, то перечислите мероприятия, в которых
+                              были лидером, укажите функционал, который
+                              выполняли/направление деятельности.</span
+                            >
+                          </div>
+                          <div class="info__item__input textarea_box">
+                            <textarea
+                              placeholder=""
+                              name="experience_leading"
+                              rows="4"
+                            ></textarea>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle info__subtitle-size">
+                            <span class="field-req">Город/населенный пункт проживания</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <div class="checkbox-box__item city-nizhny">
+                              <input
+                                type="radio"
+                                name="city"
+                                id="city_nizhny"
+                                data-id="city_nizhny"
+                                value="Нижний Новгород"
+                              />
+                              <label for="city_nizhny" class="checkbox__text"
+                                ><span>Нижний Новгород</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item city-another">
+                              <input
+                                type="radio"
+                                name="city"
+                                id="city_other"
+                                data-id="city_other"
+                                value="Другой населенный пункт"
+                              />
+                              <label for="city_other" class="checkbox__text"
+                                ><span>Другой населенный пункт</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item js-city_area-spoiler" style="display: none;">
+                          <div class="info__item">
+                            <div class="info__subtitle">
+                              <span class="field-req">Населенный пункт</span>
+                            </div>
+                            <div class="info__item__input input_box">
+                              <input
+                                type="text"
+                                name="user_dob_fio"
+                                placeholder=""
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item js-city_nizhny-spoiler" style="display: none;">
+                          <div class="info__subtitle info__subtitle-size">
+                            <span class="field-req">Район Нижнего Новгорода</span>
+                          </div>
+                          <div class="info__item__input input_box city-area">
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_sorm"
+                                data-id="city_sorm"
+                                value="Сормовский"
+                              />
+                              <label for="city_sorm" class="checkbox__text"
+                                ><span>Сормовский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_auto"
+                                data-id="city_auto"
+                                value="Автозаводский"
+                              />
+                              <label for="city_auto" class="checkbox__text"
+                                ><span>Автозаводский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_sov"
+                                data-id="city_sov"
+                                value="Советский"
+                              />
+                              <label for="city_sov" class="checkbox__text"
+                                ><span>Советский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_msk"
+                                data-id="city_msk"
+                                value="Московский"
+                              />
+                              <label for="city_msk" class="checkbox__text"
+                                ><span>Московский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_priok"
+                                data-id="city_priok"
+                                value="Приокский"
+                              />
+                              <label for="city_priok" class="checkbox__text"
+                                ><span>Приокский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_nizh"
+                                data-id="city_nizh"
+                                value="Нижегородский"
+                              />
+                              <label for="city_nizh" class="checkbox__text"
+                                ><span>Нижегородский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_lenin"
+                                data-id="city_lenin"
+                                value="Ленинский"
+                              />
+                              <label for="city_lenin" class="checkbox__text"
+                                ><span>Ленинский</span>
+                              </label>
+                            </div>
+                            <div class="checkbox-box__item">
+                              <input
+                                type="radio"
+                                name="city_area"
+                                id="city_kanav"
+                                data-id="city_kanav"
+                                value="Канавинский"
+                              />
+                              <label for="city_kanav" class="checkbox__text"
+                                ><span>Канавинский</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="info__item border-top">
+                          <div class="info__subtitle">
+                            <span class="field-req">Паспортные данные (серия, номер)</span>
+                          </div>
+                          <div
+                            class="info__item__input short-input sn-input-box input_box"
+                          >
+                            <input
+                              type="text"
+                              name="passport_ser_num"
+                              placeholder=""
+                              im-insert="true"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Дата выдачи паспорта</span>
+                          </div>
+
+                          <div
+                            class="info__item__input input_box sn-input-box data-input"
+                          >
+                            <div class="sn-img">
+                              <img src="img/icons/calendar.svg" alt="" />
+                            </div>
+                            <input
+                              required=""
+                              name="passport_date"
+                              readonly=""
+                              id="dt_start"
+                              class="datepicker-here"
+                              type="text"
+                              value=""
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Кем выдан паспорт</span>
+                          </div>
+                          <div class="info__item__input textarea_box">
+                            <textarea
+                              placeholder=""
+                              name="passport_who"
+                              rows="4"
+                            ></textarea>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                            <div class="textarea_resize"></div>
+                          </div>
+                        </div>
+
+                        <div class="info__item">
+                          <div class="info__subtitle">
+                            <span class="field-req">Адрес по прописке</span>
+                          </div>
+                          <div class="info__item__input input_box">
+                            <input
+                              type="text"
+                              name="passport_address"
+                              placeholder=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="pp__check">
+                          <div class="pp-check pp-check_c">
+                            <div class="pp-check__checkbox">
+                              <div class="check">
+                                <input
+                                  class="styled-checkbox"
+                                  id="agree1"
+                                  value=""
+                                  name="terms_ok2"
+                                  type="checkbox"
+                                />
+                                <label for="agree1"></label>
+                              </div>
+                            </div>
+                            <div class="pp-check__text">
+                              <span>
+                                <label for="agree1">
+                                  Даю согласие АНО «Центр 800» на обработку сообщенных мной в настоящей анкете моих персональных данных в соответствии с <a href="#">политикой обработки персональных данных</a>.</label
+                                >
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="content-block__more">
+                          <button type="submit" class="content-block-more">
+                            <span>Отправить анкету</span>
+                          </button>
+                        </div>
+                        <!-- <div class="pre_button_warn">
                           Нажимая кнопку «Отправить», я подтверждаю, что
                           ознакомился с
                           <a href="/static/files/policy.pdf" target="_blank"
@@ -74,4 +1074,16 @@
                           и даю согласие на обработку моих персональных данных,
                           указанных в форме анкеты кандидата в волонтёры, а
                           также получение обратной информации
-                        </div> --></div></form></div></div></div></div></div></section></main></div></body></html>
+                        </div> -->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
