@@ -756,6 +756,106 @@
                         <span>ИТОГ — <b>25</b> баллов</span>
                       </div>
                     </div>
+                    <div class="vol_handling">
+                      <div class="vol_hand_item">
+                        <div class="vol_handling_item_title">
+                          Сменить статус тестирования (при изменении волонтёру
+                          отправится письмо) <br> <span>Текущий: Не пройден</span>
+                        </div>
+                        <div class="vol_hand_item_form">
+                          <form
+                            class="js-change-voltest-status"
+                            method=""
+                            action=""
+                            data-=""
+                          >
+                            <fieldset>
+                              <input
+                                type="hidden"
+                                name="anketa"
+                                value="18367"
+                              />
+                              <input
+                                type="hidden"
+                                name="email"
+                                value="marina-1304@mail.ru"
+                              />
+                              <input
+                                type="hidden"
+                                name="nn_action"
+                                value="change_voltest_status"
+                              />
+                              <select name="vol_test_status">
+                                <option value="1">Пройден</option>
+                                <option value="2">
+                                  Не пройден
+                                </option>
+                                <option value="-1" selected="">Нет статуса</option>
+                              </select>
+
+                              <button class="btn btn_usual" type="submit">
+                                Изменить
+                              </button>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+
+                      <div class="vol_hand_item">
+                        <div class="vol_handling_item_title">
+                          Сменить статус волонтёра (при изменении волонтёру
+                          отправится письмо) <br> <span>Текущий: Прошел подготовку</span>
+                        </div>
+                        <div class="vol_hand_item_form">
+                          <div class="volhand_email_item">
+                            <span
+                              class="js-volemail btn btn_usual"
+                              data-emailsubject="sign"
+                              >Прошел подготовку</span
+                            >
+                            <span class="email__sent">Было отправлено 06.03.2023 в 13:30</span>
+                          </div>
+                          <div class="volhand_email_item">
+                            <span
+                              class="js-volemail btn btn_usual"
+                              data-emailsubject="sign"
+                              >Основной состав</span
+                            >
+                          </div>
+                          <div class="volhand_email_item">
+                            <span
+                              class="js-volemail btn btn_usual"
+                              data-emailsubject="sign"
+                              >Резервный состав </span
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="vol_hand_item">
+                        <div class="vol_handling_item_title">
+                          Сбросить тестирование
+                        </div>
+                        <div
+                          class="vol_hand_item_form"
+                          data-email="marina-1304@mail.ru"
+                          data-anketa="18367"
+                        >
+                          <div class="volhand_email_item">
+                            <span class="js-volreset-flags btn btn_usual"
+                              >Сбросить тестирование у кандидата</span
+                            >
+                          </div>
+                          <div class="volhand_email_item">
+                            <span
+                              class="js-volemail btn btn_usual"
+                              data-emailsubject="secondchance"
+                              >При несдаче теста сдать его повторно</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="tabs__panel control__archive">
                     <a href="#">Результаты тестирования 07.03.2022 16:55</a>

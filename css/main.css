@@ -943,7 +943,7 @@ input:focus {
   vertical-align: middle;
   width: 18px;
   height: 18px;
-  background: #EEEEEE;
+  background: #e4e4e4;
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1763,7 +1763,7 @@ p {
   color: rgba(22, 19, 16, 0.2);
 }
 
-label.error {
+div.error {
   display: block;
   white-space: nowrap;
   top: 100%;
@@ -1780,7 +1780,7 @@ label.error {
   -ms-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.info__item__input.input_box label.error {
+.info__item__input.input_box div.error {
   position: absolute;
 }
 
@@ -1788,7 +1788,7 @@ label {
   cursor: pointer;
 }
 
-.input_box label.error {
+.input_box div.error {
   position: absolute;
 }
 
@@ -1862,7 +1862,7 @@ textarea.error ~ .textarea_resize::before {
   top: 0;
 }
 
-.check label.error {
+.check div.error {
   position: absolute;
   bottom: -40px;
   font-size: 12px;
@@ -1872,13 +1872,13 @@ textarea.error ~ .textarea_resize::before {
   margin-top: 20px;
 }
 @media (max-width: 767px) {
-  .check label.error {
+  .check div.error {
     bottom: -40px;
     margin-top: 10px;
     left: -60px;
   }
 }
-.check label.error::before {
+.check div.error::before {
   display: none;
 }
 
@@ -1887,7 +1887,7 @@ textarea.error ~ .textarea_resize::before {
   top: -26px;
 }
 
-.pp-check__checkbox .check label.error {
+.pp-check__checkbox .check div.error {
   top: -18px;
 }
 
@@ -1973,11 +1973,11 @@ textarea.error ~ .textarea_resize::before {
   flex-wrap: nowrap;
   top: 40px;
 }
-.gender .check label.error {
+.gender .check div.error {
   margin-top: 10px;
 }
 @media (max-width: 767px) {
-  .gender .check label.error {
+  .gender .check div.error {
     margin-top: 0;
   }
 }
@@ -1991,13 +1991,13 @@ textarea.error ~ .textarea_resize::before {
   margin-top: 50px;
   margin-bottom: 0;
 }
-.pp__check .check label.error {
+.pp__check .check div.error {
   left: 0;
   top: -15px;
   margin-top: 0;
 }
 @media (max-width: 767px) {
-  .pp__check .check label.error {
+  .pp__check .check div.error {
     top: -12px;
   }
 }
@@ -2048,7 +2048,7 @@ input, textarea {
   font-weight: normal;
   font-size: 16px;
   line-height: 23px;
-  background-color: #f7f7f7 !important;
+  background-color: #eeeeee !important;
   display: block;
   overflow: hidden;
   -webkit-transition: 0.5s !important;
@@ -2069,6 +2069,15 @@ input:focus, textarea:focus {
   transition: all 0.5s !important;
   -webkit-box-shadow: inset 0 0 0 2px #040404 !important;
   box-shadow: inset 0 0 0 2px #040404 !important;
+}
+
+.container_whiteback .checkbox__text:before {
+  background-color: #e4e4e4 !important;
+}
+
+.sn-img {
+  height: 50px !important;
+  margin-top: 2px;
 }
 
 .enter {
@@ -2215,7 +2224,7 @@ input:focus, textarea:focus {
   transition: all 0.3s;
 }
 .profile__content {
-  background: #f7f7f7;
+  background: #f3f3f3;
   padding: 50px 40px;
   border-radius: 15px;
   margin-top: 30px;
@@ -2471,6 +2480,9 @@ input:focus, textarea:focus {
     margin-top: 40px;
   }
 }
+.test .checkbox__text:before {
+  background: #e4e4e4;
+}
 .test-aside {
   text-align: center;
   position: sticky;
@@ -2589,6 +2601,10 @@ input:focus, textarea:focus {
     padding: 15px;
     -webkit-box-shadow: 0px 6px 30px 0px #cccccc;
     box-shadow: 0px 6px 30px 0px #cccccc;
+    background: rgba(247, 247, 247, 0.5);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    border-radius: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2688,7 +2704,7 @@ input:focus, textarea:focus {
   display: none;
 }
 .admin__table td {
-  border-bottom: 1px solid #c4c4c4 !important;
+  border-bottom: 1px solid #aeaeae !important;
   padding-top: 15px !important;
   padding-bottom: 15px !important;
   color: #333333;
@@ -2740,6 +2756,7 @@ input:focus, textarea:focus {
 }
 .control__subtitle {
   font-size: 22px;
+  font-weight: 500;
 }
 .control__table {
   margin-top: 50px;
@@ -2763,45 +2780,6 @@ table.dataTable {
   width: 100% !important;
 }
 
-/*! CSS Used from: https://nizhny800.ru/static/css/reset.css?v=1.9.100603 */
-/*! CSS Used from: https://nizhny800.ru/static/css/main.css?v=1.9.100603 */
-.btn {
-  display: inline-block;
-  position: relative;
-  padding: 22px 66px;
-  text-align: center;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.btn:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  border-radius: 40px;
-  background: #161310;
-  z-index: -1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.btn:not([disabled]):hover:before {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-}
-
 input.txt_i {
   border: 2px solid #F3F3F3;
 }
@@ -2811,7 +2789,7 @@ input.txt_i {
   height: initial;
   width: initial;
   padding: 11px 20px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .volh_ball_change_hidden_input .txt_i {
@@ -2874,7 +2852,7 @@ td.vt_td2.vt_td116 {
 .vol_anketa_fields_item:not(:last-child) {
   margin-bottom: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #aeaeae;
 }
 .vol_anketa_fields_item_title {
   font-size: 18px;
@@ -2888,6 +2866,113 @@ td.vt_td2.vt_td116 {
   max-width: 400px;
   text-align: end;
   color: #898989;
+}
+
+fieldset {
+  border: 0 !important;
+  outline: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 22px 66px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background: #161310;
+  z-index: -1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:not([disabled]):hover:before {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.vol_handling_item_title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.vol_hand_item:not(:last-child) {
+  border-bottom: 1px solid #aeaeae;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.vol_handling {
+  margin-top: 50px;
+}
+
+.vol_hand_item_form select {
+  font-size: 17px;
+  padding: 10px 20px;
+  margin-right: 20px;
+  background: #fff;
+  border: 2px solid;
+}
+
+.volhand_email_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  form {
+    width: 100%;
+  }
+  .btn {
+    padding: 16px 28px;
+  }
+  input {
+    padding: 12px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  fieldset {
+    min-width: initial;
+  }
+}
+.vol_handling_item_title span {
+  font-weight: 500;
+}
+
+.volhand_email_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.volhand_email_item .email__sent {
+  display: block;
+  font-size: 16px;
+  color: #FF4D1C;
+  margin-left: 10px;
 }
 
 body > .pnotify.pnotify-positioned {
