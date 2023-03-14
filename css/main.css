@@ -1475,9 +1475,6 @@ label {
     width: calc(100% - 36px);
     line-height: 1.2;
   }
-  .pp-check__text span {
-    font-size: 11px;
-  }
   .new__project_cont {
     margin-top: -12px;
   }
@@ -1499,9 +1496,6 @@ label {
   }
   .require-box__item {
     margin-bottom: 8px;
-  }
-  input, textarea {
-    padding: 12px 20px;
   }
   .sn-input-box {
     width: 100% !important;
@@ -1718,11 +1712,11 @@ p {
 
 .pp-check__text span {
   display: block;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 @media (max-width: 767px) {
   .pp-check__text span {
-    margin-top: 5px;
+    margin-top: 6px;
   }
 }
 
@@ -2080,6 +2074,50 @@ input:focus, textarea:focus {
   margin-top: 2px;
 }
 
+.upload__area-small .upload__area_text .user-file {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  white-space: nowrap; /* Текст не переносится */
+  overflow: hidden; /* Обрезаем всё за пределами блока */
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.gallery__upload {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.upload__area {
+  width: 400px;
+  height: 190px;
+  margin-right: 30px;
+}
+
+.upload__required {
+  font-size: 16px;
+  color: #EC1744;
+  display: none;
+}
+.upload__required.active {
+  display: block;
+}
+
+.info__item__gallery {
+  margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .upload__require-box.upload__require-box-small.upload__require-box-small_i {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .upload__require-box.upload__require-box-small.upload__require-box-small_i {
+    margin-left: 0;
+  }
+}
 .enter {
   max-width: 500px;
   margin: 0 auto;
@@ -2104,6 +2142,7 @@ input:focus, textarea:focus {
   line-height: 100%;
   color: #333333;
   text-align: center;
+  margin-bottom: 50px;
 }
 .enter__title span {
   color: #FF4D1C;
@@ -2113,12 +2152,12 @@ input:focus, textarea:focus {
     font-size: 38px;
     max-width: 400px;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .enter__title {
-    font-size: 28px;
-    max-width: 300px;
+    margin-bottom: 40px;
   }
 }
 .enter .info__item:first-child {
@@ -2128,6 +2167,36 @@ input:focus, textarea:focus {
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 50px;
+}
+
+.forget-password {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-top: -10px;
+  color: #333333;
+}
+.forget-password:hover {
+  color: #FF4D1C;
+  text-decoration: none;
+}
+
+.login .pp__check {
+  margin-top: 30px;
+}
+.login .pp-check__text span {
+  font-size: 16px;
+  margin-top: 3px;
+}
+@media (max-width: 767px) {
+  .login .pp-check__text span {
+    margin-top: 5px;
+  }
+}
+.login .profile-password__btn {
+  max-width: 100%;
 }
 
 .profile__hat {
@@ -2947,9 +3016,6 @@ fieldset {
   .btn {
     padding: 16px 28px;
   }
-  input {
-    padding: 12px 20px;
-  }
 }
 @media only screen and (max-width: 767px) {
   fieldset {
@@ -2973,6 +3039,34 @@ fieldset {
   font-size: 16px;
   color: #FF4D1C;
   margin-left: 10px;
+}
+
+.vol_hand_item-anketa {
+  margin-top: 80px;
+}
+
+.vol_ball_cur {
+  text-align: center;
+  padding: 10px !important;
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+input.input-range-dis {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.passwords-error {
+  display: none;
+  font-size: 16px;
+  color: #FF4D1C;
+  margin-bottom: 20px;
+}
+.passwords-error.visible {
+  display: block;
 }
 
 body > .pnotify.pnotify-positioned {
@@ -3224,4 +3318,3 @@ body > .pnotify-modal-overlay {
   border-radius: 10px;
   color: #fff;
 }
-/*# sourceMappingURL=main.css.map */

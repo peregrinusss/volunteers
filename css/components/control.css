@@ -226,9 +226,6 @@ fieldset {
   .btn {
     padding: 16px 28px;
   }
-  input {
-    padding: 12px 20px;
-  }
 }
 @media only screen and (max-width: 767px) {
   fieldset {
@@ -253,4 +250,31 @@ fieldset {
   color: #FF4D1C;
   margin-left: 10px;
 }
-/*# sourceMappingURL=control.css.map */
+
+.vol_hand_item-anketa {
+  margin-top: 80px;
+}
+
+.vol_ball_cur {
+  text-align: center;
+  padding: 10px !important;
+  max-width: 60px;
+  margin: 0 auto;
+}
+
+input.input-range-dis {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.passwords-error {
+  display: none;
+  font-size: 16px;
+  color: #FF4D1C;
+  margin-bottom: 20px;
+}
+.passwords-error.visible {
+  display: block;
+}

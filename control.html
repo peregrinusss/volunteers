@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/jquery.validate.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/datepicker.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -31,7 +36,7 @@
                     </a>
                   </div>
                   <h1 class="enter__title profile__title">
-                    Андреев Александр Владимирович <span>(21)</span>
+                    Романова Марина Викторовна <span>(21)</span>
                   </h1>
                 </div>
                 <div class="content-block__more profile__btn profile__btn-exit">
@@ -281,6 +286,22 @@
                         <div class="vol_anketa_fields_item_value">54175</div>
                       </div>
                     </div>
+                    <div class="vol_hand_item vol_hand_item-anketa">
+                      <div class="vol_handling_item_title">
+                        Сменить статус волонтёра (при изменении волонтёру
+                        отправится письмо) <br> <span>Текущий: Прошел подготовку</span>
+                      </div>
+                      <div class="vol_hand_item_form">
+                        <div class="volhand_email_item">
+                          <span
+                            class="js-volemail btn btn_usual"
+                            data-emailsubject="sign"
+                            >Прошел подготовку</span
+                          >
+                          <span class="email__sent">Было отправлено 06.03.2023 в 13:30</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="tabs__panel">
                     <h2 class="control__subtitle">
@@ -306,21 +327,7 @@
                             <td class="vt_td1_1 vt_td114">А</td>
                             <td class="vt_td2 vt_td115">А</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="1"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -330,21 +337,7 @@
                             <td class="vt_td1_1 vt_td114">В</td>
                             <td class="vt_td2 vt_td115">В</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="2"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -354,21 +347,7 @@
                             <td class="vt_td1_1 vt_td114">Б</td>
                             <td class="vt_td2 vt_td115">Б</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="3"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -378,21 +357,7 @@
                             <td class="vt_td1_1 vt_td114">А</td>
                             <td class="vt_td2 vt_td115">А</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="4"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -402,21 +367,7 @@
                             <td class="vt_td1_1 vt_td114">В</td>
                             <td class="vt_td2 vt_td115">В</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="5"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -426,21 +377,7 @@
                             <td class="vt_td1_1 vt_td114">Б</td>
                             <td class="vt_td2 vt_td115">Б</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="6"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -450,21 +387,7 @@
                             <td class="vt_td1_1 vt_td114">В</td>
                             <td class="vt_td2 vt_td115">Г</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">0</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="0" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="7"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -474,21 +397,7 @@
                             <td class="vt_td1_1 vt_td114">Г</td>
                             <td class="vt_td2 vt_td115">В</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">0</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="0" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="8"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -498,21 +407,7 @@
                             <td class="vt_td1_1 vt_td114">В</td>
                             <td class="vt_td2 vt_td115">В</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="9"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -522,21 +417,7 @@
                             <td class="vt_td1_1 vt_td114">А</td>
                             <td class="vt_td2 vt_td115">А</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="10"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -546,21 +427,7 @@
                             <td class="vt_td1_1 vt_td114">В</td>
                             <td class="vt_td2 vt_td115">В</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="11"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -570,21 +437,7 @@
                             <td class="vt_td1_1 vt_td114">Б</td>
                             <td class="vt_td2 vt_td115">Б</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="12"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -594,21 +447,7 @@
                             <td class="vt_td1_1 vt_td114">Б</td>
                             <td class="vt_td2 vt_td115">Б</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">1</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="1" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="14"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -618,21 +457,7 @@
                             <td class="vt_td1_1 vt_td114">Б</td>
                             <td class="vt_td2 vt_td115">А</td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">0</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="0" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="15"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input class="vol_ball_cur input-range-dis" readonly value="1"/>
                             </td>
                           </tr>
 
@@ -642,21 +467,7 @@
                             <td class="vt_td1_1 vt_td114">nbhvjgv cxfvxzbfd</td>
                             <td class="vt_td2 vt_td115"></td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">0</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="0" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="16"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input type="number" class="vol_ball_cur input-range" value="1">
                             </td>
                           </tr>
 
@@ -673,21 +484,7 @@
                             </td>
                             <td class="vt_td2 vt_td115"></td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">3</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="3" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="17"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input type="number" class="vol_ball_cur input-range" value="1">
                             </td>
                           </tr>
 
@@ -702,21 +499,7 @@
                             </td>
                             <td class="vt_td2 vt_td115"></td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">2</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="2" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="18"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input type="number" class="vol_ball_cur input-range" value="1">
                             </td>
                           </tr>
 
@@ -733,27 +516,13 @@
                             </td>
                             <td class="vt_td2 vt_td115"></td>
                             <td class="vt_td2 vt_td116">
-                              <span class="vol_ball_cur">3</span>
-                              <span class="volh_ball_change">Изменить</span>
-                              <div class="volh_ball_change_hidden">
-                                <div class="volh_ball_change_hidden_input">
-                                  <input type="txt" class="txt_i" value="3" />
-                                </div>
-                                <div class="volh_ball_change_hidden_button">
-                                  <span
-                                    class="js-change-answer-ball btn btn_usual"
-                                    data-idx="19"
-                                    data-anketaid="18367"
-                                    >Изменить</span
-                                  >
-                                </div>
-                              </div>
+                              <input type="number" class="vol_ball_cur input-range" value="1">
                             </td>
                           </tr>
                         </tbody>
                       </table>
                       <div class="control__result">
-                        <span>ИТОГ — <b>25</b> баллов</span>
+                        <span>ИТОГ — <b id="test-result">25</b> баллов</span>
                       </div>
                     </div>
                     <div class="vol_handling">
@@ -811,16 +580,9 @@
                             <span
                               class="js-volemail btn btn_usual"
                               data-emailsubject="sign"
-                              >Прошел подготовку</span
-                            >
-                            <span class="email__sent">Было отправлено 06.03.2023 в 13:30</span>
-                          </div>
-                          <div class="volhand_email_item">
-                            <span
-                              class="js-volemail btn btn_usual"
-                              data-emailsubject="sign"
                               >Основной состав</span
                             >
+                            <span class="email__sent">Было отправлено 06.03.2023 в 13:30</span>
                           </div>
                           <div class="volhand_email_item">
                             <span

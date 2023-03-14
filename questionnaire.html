@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/jquery.validate.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/datepicker.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -139,7 +144,8 @@
                           <div class="info__item__gallery" name="presentation">
                             <div class="gallery__item">
                               <div class="info__cover_upload gallery__upload">
-                                <div
+                                <div class="upload__wrap">
+                                  <div
                                   class="upload__area upload__area-small js-upload-widget"
                                   data-extensions='["pdf","jpg","jpeg"]'
                                   data-size="25"
@@ -185,12 +191,9 @@
                                       "
                                     />
                                   </div>
-                                  <div
-                                    class="file_upload_title"
-                                    style="display: none"
-                                  >
-                                    Загружено
-                                    <span class="file_upload_title_i"></span>
+                                  </div>
+                                  <div class="upload__required">
+                                    <span>Допустимы файлы формата PDF, JPG, JPEG не более 10 Мб</span>
                                   </div>
                                 </div>
 
