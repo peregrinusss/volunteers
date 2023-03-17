@@ -79,7 +79,10 @@ body {
   border-radius: 60px;
   margin: 0 auto;
   max-width: 1360px;
-  // width: fit-content;
+}
+
+.main-fit {
+  width: fit-content;
 }
 
 .site-container {

@@ -79,6 +79,12 @@ body {
   max-width: 1360px;
 }
 
+.main-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .site-container {
   padding: 80px 70px;
 }
