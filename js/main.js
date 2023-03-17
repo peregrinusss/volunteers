@@ -85,7 +85,7 @@ const inputs = document.querySelectorAll('.input__file');
 if (fileInputWrap) {
   const input = fileInputWrap.querySelector('input[type="file"]');
   let label = fileInputWrap.querySelector('.upload__area_text');
-  labelVal = label.querySelector('.user-file').innerText;
+  let labelVal = label.querySelector('.user-file').innerText;
   input.addEventListener('change', function (e) {
     let countFiles = '';
     if (this.files && this.files.length >= 1) countFiles = this.files.length;
@@ -293,7 +293,7 @@ module.exports = JSON.parse('{"processing":"Подождите...","search":"П�
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -307,14 +307,14 @@ module.exports = JSON.parse('{"processing":"Подождите...","search":"П�
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -327,12 +327,12 @@ module.exports = JSON.parse('{"processing":"Подождите...","search":"П�
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -343,7 +343,7 @@ module.exports = JSON.parse('{"processing":"Подождите...","search":"П�
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
